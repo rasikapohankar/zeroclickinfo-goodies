@@ -1,0 +1,48 @@
+{
+    "id": "java_file_handling_cheat_sheet",
+    "name": "JavaFileHandling",
+    "description": "displayed as subtitle of the AnswerBar; optional",
+
+    "metadata": {
+        "sourceName": "displayed at the bottom of the AnswerBar; optional",
+        "sourceUrl" : "https://url.to.the.source"
+    },
+
+    "aliases": [
+        "", "second alias", "etc"
+    ],
+
+    "template_type": "terminal",
+
+    "section_order": [
+        "Byte Streams",
+        "Character Streams"
+    ],
+
+    "sections": {
+        "Byte Streams": [
+            {
+                "key": "FileInputStream in = new FileInputStream(\"xanadu.txt\");<br>int c = in.read();",
+                "val": "Uses byte stream to perform input of 8 bits. Read method returns integer or long."
+            },
+            {
+                "key": "FileOutputStream out = new FileOutputStream(\"outagain.txt\");<br>out.write(c);",
+                "val": "Uses byte stream to perform output of 8 bits."
+            },
+            {
+                "key": "FileOutputStream out = new FileOutputStream(\"outagain.txt\",true);<br>out.write(c);",
+                "val": "Appends data you write instead of overwriting old data. Constructor is FileOutputStream(File file, boolean append)."
+            }
+        ],
+        "Character Streams": [
+            {
+                "key": "Key 2.1",
+                "val": "Value 2.2"
+            },
+            {
+                "key": "Key 2.2",
+                "val": "Value 2.2"
+            }
+        ]
+    }
+}
